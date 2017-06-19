@@ -1,0 +1,111 @@
+<div class="order user-chart user">
+    <p><i class="show-hide1" ng-if="show" ng-click="isShow(show)"></i></p>
+    <h1 class="title-line">会员统计</h1>
+    <ul class="user-list">
+        <li class="active" ui-sref="statistics.user-chart">会员增长</li>
+        <li ui-sref="statistics.user-business">会员业务</li>
+        <li ui-sref="statistics.user-attr">会员属性</li>
+    </ul>
+    <div class="panel panel-default panel-esp">
+        <h2 class="panel-heading sub-title">会员实时统计</h2>
+        <table class="table">
+            <tr>
+                <td>
+                    <h1>会员总数（人）</h1>
+                    <p>0</p>
+                </td>
+                <td>
+                    <h1>粉丝总数（人）</h1>
+                    <p>0</p>
+                </td>
+                <td>
+                    <h1>分销商总数（人）</h1>
+                    <p>0</p>
+                </td>
+                <td>
+                    <h1>代理商总数（人）</h1>
+                    <p>0</p>
+                </td>
+                <td>
+                    <h1>本月新增会员数（人）</h1>
+                    <p>0</p>
+                </td>
+                <td>
+                    <h1>本月新增粉丝数（人）</h1>
+                    <p>0</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="panel panel-default panel-esp">
+        <h2 class="panel-heading sub-title">往期会员结构统计</h2>
+        <table class="table">
+            <tr>
+                <td>
+                    <h1>上月新增会员数（人）</h1>
+                    <p>0</p>
+                    <div>环比增幅<span>0%<i></i></span></div>
+                </td>
+                <td>
+                    <h1>上月新增粉丝数（人）</h1>
+                    <p>0</p>
+                    <div>环比增幅<span>0%<i></i></span></div>
+                </td>
+                <td>
+                    <h1>上月新增供应商（人）</h1>
+                    <p>0</p>
+                    <div>环比增幅<span>0%<i></i></span></div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="number-price">
+        <span>新增会员/粉丝<i class="question-mark"></i></span>
+        <div class="filter">
+            <div class="control-group">
+                <label class="control-label">筛选日期：</label>
+                <input name="start" class="input-small calendar" type="text">
+                <label>至</label>
+                <input name="end"  class="input-small calendar" type="text">
+            </div>
+            <button class="button button-primary"><i class="icon-white icon-search"></i> 查询</button>
+        </div>
+        <div class="choose">
+            <ul class="date">
+                <li class="active">日</li>
+                <li>周</li>
+                <li>月</li>
+                <li>季</li>
+                <li>年</li>
+            </ul>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <h2 class="panel-heading sub-title">新增会员/粉丝趋势图</h2>
+        <div class="cd-contain">
+            <highchart config="addUserChartConfig"  ></highchart>
+        </div>
+    </div>
+
+    <div class="number-price">
+        <span>饼图统计<i class="question-mark"></i></span>
+    </div>
+    <div class="panel-pie">
+        <div class="panel panel-default">
+            <h2 class="panel-heading sub-title">粉丝会员数量饼状图</h2>
+            <div class="cd-contain">
+                <div>
+                    <highchart config="fansNumChartConfig"></highchart>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <h2 class="panel-heading sub-title">多次购物会员数量饼状图</h2>
+            <div class="cd-contain">
+                <div>
+                    <highchart config="shoppingChartConfig"></highchart>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,91 @@
+<div class="alipay">
+    <p><i class="show-hide1" ng-if="show" ng-click="isShow(show)"></i></p>
+    <h1 class="set-title">支付宝收款账号<i class="question-mark"></i></h1>
+    <div class="alert alert-info alert-dismissable">
+        <button type="button" class="close" data-dismiss="alert"
+                aria-hidden="true">
+            &times;
+        </button>
+        <h1><strong>提示</strong></h1>
+        <p>
+            申请此接口须填写网站地址，网址必须通过ICP备案，网站备案主体需要与支付宝账户主体名称一致。具体可以联系在线客服
+        </p>
+    </div>
+    <div class="alert alert-default switch-choose">
+        <div class="fun-switch">
+            <h1><strong>功能开关</strong></h1>
+            <p>
+                开启后，结算时可以使用支付宝支付
+            </p>
+        </div>
+        <section class="model-2">
+            <div class="checkbox">
+                <input  type="checkbox"/>
+                <label></label>
+            </div>
+        </section>
+    </div>
+    <div class="alert alert-default switch-choose">
+        <div class="fun-switch">
+            <h1><strong>设为默认</strong></h1>
+            <p>
+                是否设置支付宝为默认支付方式
+            </p>
+        </div>
+        <section class="model-2">
+            <div class="checkbox">
+                <input  type="checkbox"/>
+                <label></label>
+            </div>
+        </section>
+    </div>
+    <div class="alipay-form">
+        <form>
+            <ul>
+                <li>
+                    <label>快速签约：</label>
+                    <a type="button" class="btn btn-warning" href="https://b.alipay.com/signing/productDetail.htm?productId=I1011000290000001001">去支付宝</a>
+                </li>
+                <li>
+                    <label>
+                        <span>*</span>
+                        支付宝账号：
+                    </label>
+                    <input type="text">
+                    <span></span>
+                </li>
+                <li>
+                    <label>
+                        <span>*</span>
+                        支付宝账号姓名：
+                    </label>
+                    <input type="text">
+                    <span></span>
+                </li>
+                <li class="obtain">
+                    <label>
+                        <span>*</span>
+                        PID：
+                    </label>
+                    <input type="text">
+                    <span></span>
+                </li>
+                <li class="obtain">
+                    <p>成功申请支付宝接口后获取到的PID</p>
+                </li>
+                <li class="obtain">
+                    <label>
+                        <span>*</span>
+                        KEY：
+                    </label>
+                    <input type="text">
+                    <span></span>
+                </li>
+                <li class="obtain">
+                    <p>成功申请支付宝接口后获取到的Key</p>
+                </li>
+            </ul>
+            <button class="button button-primary">保存</button>
+        </form>
+    </div>
+</div>

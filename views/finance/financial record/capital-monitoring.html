@@ -1,0 +1,57 @@
+<div class="capital">
+    <p><i class="show-hide1" ng-if="show" ng-click="isShow(show)"></i></p>
+    <h1>资金监控日志<i class="question-mark"></i></h1>
+    <div>
+        <div class="control-group">
+            <input  type="text" placeholder="会员ID">
+            <input  type="text" placeholder="账号">
+            <select class="form-control">
+                <option>类型</option>
+                <option>佣金提现</option>
+                <option>余额提现</option>
+                <option>调整余额</option>
+                <option>调整佣金</option>
+                <option>订单佣金</option>
+                <option>订单付款</option>
+                <option>删除订单返还余额</option>
+                <option>退货返还余额</option>
+                <option>账号充值</option>
+                <option>充值优惠</option>
+            </select>
+            <input name="start" class="input-small calendar input-esp" type="text" placeholder="开始日期">
+            <label>至</label>
+            <input name="end"  class="input-small calendar input-esp" type="text" placeholder="结束日期">
+        </div>
+        <button class="button button-primary"><i class="icon-white icon-search"></i> 查询</button>
+    </div>
+    <div class="show-num">
+        <span>每页显示数量：</span>
+        <a href="#" class="intem">10</a>
+        <a href="#" class="intem">20</a>
+        <a href="#" class="intem">30</a>
+        <a href="#" class="intem">40</a>
+        <a href="#" class="intem">50</a>
+    </div>
+    <div class="panel panel-default panel-esp">
+        <div class="panel-heading">
+            <table class="table">
+                <tr>
+                    <td>昵称/手机号</td>
+                    <td>姓名</td>
+                    <td>总佣金金额</td>
+                    <td>剩余佣金</td>
+                    <td>提现佣金</td>
+                    <td>提到金额</td>
+                    <td>操作</td>
+                </tr>
+            </table>
+        </div>
+        <table class="table infor">
+            <tr>
+                <td>
+                    暂无信息
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

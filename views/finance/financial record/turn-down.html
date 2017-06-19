@@ -1,0 +1,36 @@
+<div class="turn">
+    <p><i class="show-hide1" ng-if="show" ng-click="isShow(show)"></i></p>
+    <h1>驳回记录</h1>
+    <div>
+        <div class="control-group">
+            <input  type="text" placeholder="昵称/手机号/会员ID">
+            <input  type="text" placeholder="账号">
+            <input name="start" class="input-small calendar" type="text" placeholder="申请时间">
+            <label>至</label>
+            <input name="end"  class="input-small calendar" type="text" placeholder="申请时间">
+        </div>
+        <button class="button button-primary"><i class="icon-white icon-search"></i> 查询</button>
+    </div>
+    <div class="panel panel-default panel-esp">
+        <div class="panel-heading">
+            <table class="table">
+                <tr>
+                    <td>昵称/手机号</td>
+                    <td>申请时间</td>
+                    <td>提现金额（元）</td>
+                    <td>收款人/账号</td>
+                    <td>支持类型</td>
+                    <td>备注</td>
+                    <td>驳回原因</td>
+                </tr>
+            </table>
+        </div>
+        <table class="table infor">
+            <tr>
+                <td>
+                    暂无信息
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

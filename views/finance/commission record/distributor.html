@@ -1,0 +1,40 @@
+<div class="distributor">
+    <p><i class="show-hide1" ng-if="show" ng-click="isShow(show)"></i></p>
+    <h1>分销商佣金列表<i class="question-mark"></i></h1>
+    <div>
+        <div class="control-group">
+            <input  type="text" placeholder="昵称/手机号/会员ID">
+            <input name="start" class="input-small calendar" type="text" placeholder="剩余佣金">
+            <label>至</label>
+            <input name="end"  class="input-small calendar" type="text" placeholder="剩余佣金">
+            <select class="form-control">
+                <option>佣金排序</option>
+                <option>升</option>
+                <option>降</option>
+            </select>
+        </div>
+        <button class="button button-primary"><i class="icon-white icon-search"></i> 查询</button>
+    </div>
+    <div class="panel panel-default panel-esp">
+        <div class="panel-heading">
+            <table class="table">
+                <tr>
+                    <td>昵称/手机号</td>
+                    <td>姓名</td>
+                    <td>总佣金金额</td>
+                    <td>剩余佣金</td>
+                    <td>提现佣金</td>
+                    <td>提到金额</td>
+                    <td>操作</td>
+                </tr>
+            </table>
+        </div>
+        <table class="table infor">
+            <tr>
+                <td>
+                    暂无信息
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

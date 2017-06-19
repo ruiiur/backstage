@@ -1,0 +1,29 @@
+<div class="main-content">
+    <div class="content-left" ng-if="hide">
+        <p><i class="show-hide" ng-click="isHide(hide)"></i></p>
+        <dl>
+            <dt>
+                <i class="fa fa-shopping-bag"></i>
+                <span>系统设置</span>
+            </dt>
+            <dd ui-sref-active="active">
+                <a ui-sref="settings.alipay">支付宝收款账号</a>
+            </dd>
+            <dd ui-sref-active="active">
+                <a ui-sref="settings.wechat">微信收款账号</a>
+            </dd>
+            <dd ui-sref-active="active">
+                <a ui-sref="settings.mention">提现设置</a>
+            </dd>
+            <dd ui-sref-active="active">
+                <a ui-sref="settings.apply">申请设置</a>
+            </dd>
+            <dd ui-sref-active="active">
+                <a ui-sref="settings.review">自动审核设置</a>
+            </dd>
+            <dd ui-sref-active="active">
+                <a ui-sref="settings.payment">支付设置</a>
+            </dd>
+        </dl>
+    </div><div ui-view="settings-main" class="content-right"></div>
+</div>

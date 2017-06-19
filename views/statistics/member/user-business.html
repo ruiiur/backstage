@@ -1,0 +1,155 @@
+<div class="order user-business user">
+    <p><i class="show-hide1" ng-if="show" ng-click="isShow(show)"></i></p>
+    <h1 class="title-line">会员业务<i class="question-mark"></i></h1>
+    <ul class="user-list">
+        <li ui-sref="statistics.user-chart">会员增长</li>
+        <li class="active" ui-sref="statistics.user-business">会员业务</li>
+        <li ui-sref="statistics.user-attr">会员属性</li>
+    </ul>
+    <div class="panel panel-default panel-esp">
+        <h2 class="panel-heading sub-title">佣金实时统计</h2>
+        <table class="table">
+            <tr>
+                <td>
+                    <h1>会员总余额（元）</h1>
+                    <p>0</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="number-price">
+        <span>购物会员统计<i class="question-mark"></i></span>
+        <div class="filter">
+            <div class="control-group">
+                <label class="control-label">筛选日期：</label>
+                <input name="start" class="input-small calendar" type="text">
+                <label>至</label>
+                <input name="end"  class="input-small calendar" type="text">
+            </div>
+            <button class="button button-primary"><i class="icon-white icon-search"></i> 查询</button>
+        </div>
+        <div class="choose">
+            <ul class="date">
+                <li class="active">日</li>
+                <li>周</li>
+                <li>月</li>
+                <li>季</li>
+                <li>年</li>
+            </ul>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <h2 class="panel-heading sub-title">购物会员趋势图</h2>
+        <div class="cd-contain">
+            <div>
+                <highchart config="shoppingMembersChartConfig"  ></highchart>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel-pie">
+        <div class="panel panel-default">
+            <h2 class="panel-heading sub-title">重复购物会员数量饼状图</h2>
+            <div class="cd-contain">
+                <div>
+                    <highchart config="repeatShoppingChartConfig"></highchart>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <h2 class="panel-heading sub-title">购物会员数量饼状图</h2>
+            <div class="cd-contain">
+                <div>
+                    <highchart config="numberShoppingChartConfig"></highchart>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel-pie">
+        <div class="panel panel-default">
+            <div class="panel-heading">会员积分排行榜</div>
+            <table class="table">
+                <thead>
+                <tr>
+                    <td>排名</td>
+                    <td>昵称/手机</td>
+                    <td>会员积分</td>
+                    <td>注册时间</td>
+                </tr>
+                </thead>
+                <tbody>
+                <td colspan="4">暂无信息</td>
+                </tbody>
+            </table>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">会员余额排行榜</div>
+            <table class="table">
+                <thead>
+                <tr>
+                    <td>排名</td>
+                    <td>昵称/手机</td>
+                    <td>会员余额</td>
+                    <td>注册时间</td>
+                </tr>
+                </thead>
+                <tbody>
+                <td colspan="4">暂无信息</td>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="panel-pie">
+        <div class="panel panel-default">
+            <div class="panel-heading">购物笔数排行榜</div>
+            <table class="table">
+                <thead>
+                <tr>
+                    <td>排名</td>
+                    <td>昵称/手机</td>
+                    <td>购物次数</td>
+                    <td>注册时间</td>
+                </tr>
+                </thead>
+                <tbody>
+                <td colspan="4">暂无信息</td>
+                </tbody>
+            </table>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">购物金额排行榜</div>
+            <table class="table">
+                <thead>
+                <tr>
+                    <td>排名</td>
+                    <td>昵称/手机</td>
+                    <td>购物金额</td>
+                    <td>注册时间</td>
+                </tr>
+                </thead>
+                <tbody>
+                <td colspan="4">暂无信息</td>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="panel-pie">
+        <div class="panel panel-default">
+            <div class="panel-heading">上月消费排行榜</div>
+            <table class="table">
+                <thead>
+                <tr>
+                    <td>排名</td>
+                    <td>昵称/手机</td>
+                    <td>消费金额</td>
+                    <td>注册时间</td>
+                </tr>
+                </thead>
+                <tbody>
+                <td colspan="4">暂无信息</td>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

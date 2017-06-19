@@ -1,0 +1,747 @@
+body {
+  text-align: left !important;
+  background: #eee !important; }
+
+.logo {
+  display: block;
+  width: 140px;
+  height: 53px;
+  background: url(../images/logo.png) no-repeat;
+  background-size: 100%; }
+
+.navbar-brand {
+  float: left;
+  height: 50px;
+  padding: 0 0 0 15px !important;
+  font-size: 18px;
+  line-height: 20px; }
+
+.navbar-header {
+  width: 200px;
+  text-align: center; }
+  .navbar-header a {
+    display: inline-block;
+    font-size: 28px; }
+
+.navbar-nav li {
+  line-height: 53px;
+  height: 53px;
+  float: left;
+  list-style: none;
+  border-bottom: 3px solid transparent; }
+  .navbar-nav li:active {
+    border-bottom: 3px solid #3c9dff !important; }
+.navbar-nav li > .active {
+  border-bottom: 3px solid #3c9dff !important; }
+
+.navbar-nav > .active > a,
+.navbar-nav > .active > a:hover,
+.navbar-nav > .active > a:focus {
+  border-bottom: 3px solid #3c9dff !important; }
+
+.nav li > a {
+  display: block;
+  padding: 0 12px !important;
+  color: #000;
+  line-height: 51px;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 700; }
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  background-color: #fff !important;
+  border-bottom: 3px solid #3c9dff !important; }
+
+.header {
+  width: 100% !important;
+  border-top: 1px solid #ccc;
+  height: 53px;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); }
+
+.theme, .nav {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 53px;
+  height: 53px; }
+
+.nav li {
+  line-height: 53px;
+  height: 53px;
+  float: left;
+  list-style: none; }
+
+.main {
+  background: #eee; }
+
+.main-content {
+  background: #fff;
+  width: 99%;
+  min-width: 1270px;
+  margin: auto;
+  position: relative;
+  border: 1px solid #e2e2e2; }
+
+.content-left, .content-right {
+  display: inline-block !important;
+  vertical-align: top; }
+
+.show-hide {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: 5px;
+  background: url(../images/hide.png); }
+
+.show-hide1 {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  background: url(../images/hide.png); }
+
+.content-left {
+  width: 200px;
+  min-height: 660px;
+  border-left: 1px solid #e2e2e2;
+  overflow: hidden; }
+  .content-left p {
+    margin-top: 5px;
+    text-align: right; }
+  .content-left dl {
+    display: block;
+    width: 100%; }
+  .content-left dt {
+    padding-left: 30px;
+    color: #8d8d8d;
+    font-size: 14px;
+    line-height: 34px; }
+    .content-left dt i {
+      margin-right: 10px; }
+  .content-left dd {
+    font-size: 14px;
+    padding-left: 56px;
+    line-height: 34px; }
+    .content-left dd a {
+      display: block;
+      width: auto;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      word-wrap: normal;
+      color: #222;
+      text-decoration: none; }
+    .content-left dd.active {
+      background-color: #1C89D5; }
+      .content-left dd.active a {
+        color: #fff; }
+    .content-left dd:not(.active):hover {
+      background-color: #eee !important;
+      color: #000; }
+
+.content-right {
+  min-height: 660px;
+  border-left: 1px solid #e2e2e2;
+  overflow: hidden;
+  width: calc(100% - 215px);
+  padding: 20px 0 20px 20px !important; }
+
+.control-group {
+  display: inline-block;
+  vertical-align: middle; }
+  .control-group input {
+    display: inline-block;
+    padding: 4px 10px;
+    margin-right: 5px;
+    width: 160px;
+    border: 1px solid #ccc;
+    line-height: normal;
+    font-size: 12px;
+    vertical-align: middle;
+    color: #000;
+    border-radius: 4px; }
+
+.panel {
+  width: 100%; }
+  .panel table {
+    width: 100%; }
+
+.order-number li {
+  float: left; }
+
+form {
+  display: inline; }
+
+.date {
+  float: right; }
+  .date li {
+    float: left; }
+
+.title-line {
+  font-size: 14px;
+  padding-bottom: 20px;
+  font-weight: bold; }
+
+.order .sub-title, .integral-statistics .sub-title, .coupon-statistics .sub-title {
+  font-weight: 700; }
+.order .table td, .integral-statistics .table td, .coupon-statistics .table td {
+  padding: 5px 10px; }
+  .order .table td h1, .integral-statistics .table td h1, .coupon-statistics .table td h1 {
+    color: #000;
+    font-size: 12px; }
+  .order .table td p, .integral-statistics .table td p, .coupon-statistics .table td p {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Arial;
+    line-height: 28px;
+    color: #000; }
+  .order .table td div, .integral-statistics .table td div, .coupon-statistics .table td div {
+    font-family: Arial;
+    line-height: 28px;
+    font-size: 12px;
+    color: #000; }
+    .order .table td div span, .integral-statistics .table td div span, .coupon-statistics .table td div span {
+      padding: 0 10px;
+      color: red; }
+      .order .table td div span i, .integral-statistics .table td div span i, .coupon-statistics .table td div span i {
+        display: inline-block;
+        width: 11px;
+        height: 11px;
+        background: url(../images/down-rise.png) no-repeat; }
+  .order .table td:hover, .integral-statistics .table td:hover, .coupon-statistics .table td:hover {
+    background: #eee; }
+    .order .table td:hover tr, .integral-statistics .table td:hover tr, .coupon-statistics .table td:hover tr {
+      background: #fff; }
+.order .table tr:hover, .integral-statistics .table tr:hover, .coupon-statistics .table tr:hover {
+  background: #fff !important; }
+
+.panel-esp {
+  border-radius: 0 !important; }
+
+.order-introduction {
+  width: 100%;
+  margin-bottom: 10px;
+  height: 65px;
+  background: url(../images/charpanel-live.png) no-repeat;
+  background-size: 100% 100%; }
+  .order-introduction .order-long {
+    padding: 11px 0 0 9px; }
+    .order-introduction .order-long p {
+      font-size: 14px; }
+    .order-introduction .order-long strong {
+      display: block;
+      font-size: 28px;
+      font-weight: 700;
+      padding-top: 5px;
+      font-family: Arial; }
+  .order-introduction .order-left, .order-introduction .order-right {
+    width: 50%;
+    display: inline-block;
+    float: left;
+    padding: 11px 0 0 9px; }
+    .order-introduction .order-left p, .order-introduction .order-right p {
+      font-size: 14px; }
+    .order-introduction .order-left strong, .order-introduction .order-right strong {
+      display: block;
+      font-size: 28px;
+      font-weight: 700;
+      padding-top: 5px;
+      font-family: Arial; }
+  .order-introduction .order-color {
+    color: #3c9dff; }
+  .order-introduction .order-color-esp {
+    color: #ff9e00; }
+
+.cd-contain {
+  background-color: #eee;
+  padding: 10px;
+  min-height: 10px; }
+
+.number-price {
+  margin-top: 5px;
+  margin-bottom: 10px; }
+  .number-price span {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 30px; }
+  .number-price .filter, .number-price .choose {
+    display: inline-block; }
+  .number-price .filter {
+    margin-left: 25%; }
+    .number-price .filter label {
+      margin: 0 0 0 5px;
+      color: #333;
+      font-weight: 100; }
+    .number-price .filter input {
+      height: 30px; }
+  .number-price .choose {
+    float: right; }
+    .number-price .choose li {
+      display: inline-block;
+      background: #c7c7c7;
+      color: #fff;
+      width: 50px;
+      height: 24px;
+      line-height: 24px;
+      cursor: pointer;
+      margin-left: 5px;
+      text-align: center; }
+      .number-price .choose li.active {
+        background: #3c9dff; }
+
+.question-mark {
+  background-image: url(../images/wen.png);
+  background-position: 0 0;
+  background-size: 100%;
+  margin-left: 5px;
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: .3em;
+  line-height: 14px;
+  vertical-align: -2px; }
+
+.withdrawals .control-group, .withdraw .control-group, .turn .control-group, .account .control-group, .red .control-group, .distributor .control-group, .capital .control-group {
+  margin-bottom: 10px; }
+  .withdrawals .control-group input, .withdrawals .control-group select, .withdraw .control-group input, .withdraw .control-group select, .turn .control-group input, .turn .control-group select, .account .control-group input, .account .control-group select, .red .control-group input, .red .control-group select, .distributor .control-group input, .distributor .control-group select, .capital .control-group input, .capital .control-group select {
+    height: 30px;
+    display: inline-block;
+    margin-right: 5px;
+    width: 180px;
+    border: 1px solid #ccc;
+    line-height: normal;
+    font-size: 12px;
+    vertical-align: middle;
+    color: #000;
+    border-radius: 4px;
+    background: #fff; }
+  .withdrawals .control-group .input-esp, .withdraw .control-group .input-esp, .turn .control-group .input-esp, .account .control-group .input-esp, .red .control-group .input-esp, .distributor .control-group .input-esp, .capital .control-group .input-esp {
+    width: 100px; }
+.withdrawals button, .withdraw button, .turn button, .account button, .red button, .distributor button, .capital button {
+  margin-bottom: 10px; }
+
+.capital .show-num {
+  display: block;
+  text-align: right;
+  font-size: 12px;
+  margin: 10px 0 7px; }
+  .capital .show-num span {
+    font-weight: 900; }
+  .capital .show-num a {
+    border: 1px solid #1C89D5;
+    background: #1C89D5;
+    color: #FFF;
+    padding: 2px 10px; }
+
+.withdrawals h1, .commission h1, .withdraw h1, .turn h1, .account h1, .red h1, .distributor h1, .capital h1 {
+  font-size: 14px;
+  padding-bottom: 20px;
+  font-weight: bold; }
+.withdrawals .panel-heading, .commission .panel-heading, .withdraw .panel-heading, .turn .panel-heading, .account .panel-heading, .red .panel-heading, .distributor .panel-heading, .capital .panel-heading {
+  padding: 0; }
+.withdrawals table, .commission table, .withdraw table, .turn table, .account table, .red table, .distributor table, .capital table {
+  margin-bottom: 0; }
+  .withdrawals table td, .commission table td, .withdraw table td, .turn table td, .account table td, .red table td, .distributor table td, .capital table td {
+    border-top: none !important;
+    font-weight: 700;
+    color: #555;
+    border-left: none;
+    border-right: none;
+    font-size: 12px; }
+    .withdrawals table td i, .commission table td i, .withdraw table td i, .turn table td i, .account table td i, .red table td i, .distributor table td i, .capital table td i {
+      display: block;
+      width: 16px;
+      height: 16px;
+      background-image: url(../images/check.png);
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: 100%; }
+.withdrawals .infor, .commission .infor, .withdraw .infor, .turn .infor, .account .infor, .red .infor, .distributor .infor, .capital .infor {
+  background: #fff; }
+  .withdrawals .infor td, .commission .infor td, .withdraw .infor td, .turn .infor td, .account .infor td, .red .infor td, .distributor .infor td, .capital .infor td {
+    font-size: 12px;
+    font-weight: 100; }
+
+.red .alert-info {
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+  color: #31708f;
+  font-size: 12px; }
+.red span {
+  font-size: 16px;
+  margin: 0 3px; }
+.red .alert {
+  position: relative;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin-bottom: 20px;
+  border-radius: 0 !important;
+  line-height: 1.4em; }
+
+.alert-default {
+  position: relative;
+  padding: 10px 20px;
+  background: #F8F8F8;
+  margin-bottom: 10px; }
+
+.switch-choose select {
+  float: right !important;
+  width: 33.33%; }
+
+.fun-switch {
+  display: inline-block; }
+
+.alipay .set-title, .wechat .set-title, .review .set-title, .mention .set-title, .payment .set-title, .apply .set-title {
+  font-size: 14px;
+  padding-bottom: 20px;
+  font-weight: bold; }
+.alipay .alert strong, .wechat .alert strong, .review .alert strong, .mention .alert strong, .payment .alert strong, .apply .alert strong {
+  font-size: 12px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 5px !important;
+  display: inline-block; }
+.alipay .alert p, .wechat .alert p, .review .alert p, .mention .alert p, .payment .alert p, .apply .alert p {
+  font-size: 10px;
+  color: #666; }
+  .alipay .alert p a, .wechat .alert p a, .review .alert p a, .mention .alert p a, .payment .alert p a, .apply .alert p a {
+    color: #333;
+    font-size: 10px;
+    text-decoration: none; }
+.alipay .alert .warn, .wechat .alert .warn, .review .alert .warn, .mention .alert .warn, .payment .alert .warn, .apply .alert .warn {
+  font-size: 12px;
+  color: red; }
+
+.alipay-form {
+  position: relative;
+  padding: 10px 20px;
+  background: #F8F8F8;
+  margin-bottom: 10px; }
+  .alipay-form label {
+    width: 110px;
+    text-align: right;
+    line-height: 28px;
+    font-weight: 700;
+    color: #333;
+    font-size: 12px !important; }
+  .alipay-form li {
+    height: 36px;
+    margin-bottom: 10px; }
+    .alipay-form li a {
+      height: 22px;
+      line-height: 22px; }
+    .alipay-form li.obtain {
+      height: 25px; }
+      .alipay-form li.obtain p {
+        padding-left: 115px;
+        font-size: 12px;
+        color: #666;
+        line-height: 29px; }
+        .alipay-form li.obtain p a {
+          font-size: 12px;
+          color: #000; }
+          .alipay-form li.obtain p a:hover {
+            text-decoration: none; }
+    .alipay-form li span {
+      color: red; }
+  .alipay-form input {
+    display: inline-block;
+    margin-right: 5px;
+    width: 262px !important;
+    height: 30px !important;
+    border: 1px solid #ccc;
+    line-height: normal;
+    font-size: 12px;
+    vertical-align: middle;
+    color: #000;
+    border-radius: 4px;
+    background: #fff; }
+  .alipay-form button {
+    margin-left: 115px; }
+
+.mention-form, .apply-form {
+  position: relative;
+  padding: 10px 20px;
+  background: #F8F8F8;
+  margin-bottom: 10px; }
+  .mention-form label, .apply-form label {
+    width: 110px;
+    text-align: right;
+    line-height: 28px;
+    font-weight: 700;
+    color: #333;
+    font-size: 12px !important; }
+  .mention-form .point, .apply-form .point {
+    color: red; }
+  .mention-form .mention-line, .apply-form .mention-line {
+    position: relative;
+    height: 1px;
+    width: 100%;
+    background: #eee;
+    margin: 15px 0 30px; }
+  .mention-form .mention-title, .apply-form .mention-title {
+    display: block;
+    font-size: 12px;
+    margin-top: -38px;
+    margin-left: 25px;
+    background: #F8F8F8;
+    color: #d5d5d5; }
+
+.mention-form .form-content ul {
+  margin-top: 20px; }
+  .mention-form .form-content ul li .radio-one {
+    margin-right: 20px; }
+  .mention-form .form-content ul li .checkbox-two {
+    margin: 0 15px 0 0; }
+  .mention-form .form-content ul li .input-name {
+    display: inline-block;
+    vertical-align: middle;
+    color: #333;
+    font-size: 12px;
+    padding-top: 2px;
+    padding-left: 5px; }
+  .mention-form .form-content ul .obtain p {
+    padding-left: 115px !important;
+    font-size: 12px;
+    color: #666; }
+  .mention-form .form-content ul .input-text {
+    height: 30px;
+    line-height: 30px;
+    margin: 10px 0; }
+    .mention-form .form-content ul .input-text input {
+      height: 30px;
+      width: 100px; }
+.mention-form .form-content textarea {
+  width: 200px;
+  height: 100px;
+  resize: none;
+  margin: 10px 0 20px; }
+.mention-form .form-content button {
+  margin-left: 115px !important;
+  margin-top: 10px; }
+
+.apply-form .head-title {
+  border-radius: 4px;
+  height: 30px;
+  display: inline-block;
+  margin-right: 5px;
+  width: 182px;
+  border: 1px solid #ccc;
+  line-height: normal;
+  font-size: 12px;
+  vertical-align: middle;
+  color: #000;
+  background: #fff; }
+.apply-form .short-in {
+  width: 102px;
+  height: 30px; }
+.apply-form li {
+  margin-bottom: 15px; }
+.apply-form textarea {
+  width: 222px;
+  height: 110px;
+  resize: none;
+  margin: 10px 0 20px; }
+
+.payment-form {
+  position: relative;
+  padding: 10px 20px;
+  background: #F8F8F8;
+  margin-bottom: 10px; }
+  .payment-form li:not(.obtain) {
+    margin: 15px 0; }
+  .payment-form label {
+    width: 140px;
+    text-align: right;
+    line-height: 28px;
+    font-weight: 700;
+    color: #333;
+    font-size: 12px !important; }
+  .payment-form .obtain {
+    margin: 0; }
+    .payment-form .obtain p {
+      padding-left: 145px !important;
+      font-size: 12px;
+      color: #666; }
+  .payment-form .upload {
+    margin-left: 145px !important;
+    margin-top: 10px; }
+
+.btn {
+  padding: 0 12px !important;
+  font-size: 12px;
+  line-height: 21px;
+  border-radius: 2px;
+  text-align: center; }
+
+.footer {
+  padding: 15px 0;
+  line-height: 26px;
+  text-align: center;
+  font-size: 12px;
+  color: #666; }
+
+.icon-audit {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: url(../images/bg.png) 0 0 no-repeat;
+  background-size: cover; }
+
+section {
+  position: relative;
+  display: inline-block;
+  vertical-align: top !important;
+  float: right !important;
+  min-width: 100px !important;
+  width: 100px !important;
+  height: 34px !important;
+  padding: 0 !important;
+  min-height: 34px !important; }
+
+.checkbox {
+  margin: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100px !important;
+  height: 34px !important; }
+  .checkbox input {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-top: 0 !important;
+    width: 100px !important;
+    height: 34px !important; }
+  .checkbox label {
+    width: 100px !important;
+    height: 34px !important; }
+
+.checkbox label:after {
+  content: '';
+  position: absolute;
+  width: 34px !important;
+  height: 34px !important;
+  border-radius: 100%;
+  left: 0;
+  top: -5px;
+  z-index: 2;
+  background: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.4s;
+  transition: 0.4s; }
+
+.checkbox input:checked + label:after {
+  left: 66px !important; }
+
+.commission-rank .panel, .integral-rank .panel, .member-rank .panel {
+  width: 49%;
+  display: inline-block;
+  border-radius: 5px !important; }
+  .commission-rank .panel thead, .integral-rank .panel thead, .member-rank .panel thead {
+    background: #eee; }
+    .commission-rank .panel thead td, .integral-rank .panel thead td, .member-rank .panel thead td {
+      text-align: center; }
+  .commission-rank .panel tbody td, .integral-rank .panel tbody td, .member-rank .panel tbody td {
+    text-align: center; }
+  .commission-rank .panel .panel-heading, .integral-rank .panel .panel-heading, .member-rank .panel .panel-heading {
+    font-size: 14px;
+    color: #333;
+    font-weight: bold; }
+.commission-rank .panel-right, .integral-rank .panel-right, .member-rank .panel-right {
+  float: right; }
+
+.user .user-list {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd; }
+  .user .user-list li {
+    float: left;
+    text-align: center;
+    font-size: 10px !important;
+    padding: 7px 18px;
+    margin-right: -1px;
+    display: inline-block;
+    background-color: #ebebeb;
+    color: #666;
+    border: 1px solid #c8c8c8; }
+    .user .user-list li.active {
+      font-weight: 700;
+      background: #fff !important;
+      color: #333;
+      border-top: 2px solid #1C89D5;
+      border-bottom: 1px solid #fff;
+      margin-bottom: -1px; }
+
+.user-chart .panel-pie, .user-business .panel-pie {
+  width: 100%;
+  display: inline-block; }
+  .user-chart .panel-pie .panel, .user-business .panel-pie .panel {
+    width: 49% !important;
+    display: inline-block; }
+    .user-chart .panel-pie .panel:nth-child(2), .user-business .panel-pie .panel:nth-child(2) {
+      float: right; }
+    .user-chart .panel-pie .panel thead, .user-business .panel-pie .panel thead {
+      background: #eee; }
+      .user-chart .panel-pie .panel thead td, .user-business .panel-pie .panel thead td {
+        text-align: center; }
+    .user-chart .panel-pie .panel tbody td, .user-business .panel-pie .panel tbody td {
+      text-align: center; }
+
+.user-content {
+  margin-top: -20px;
+  margin-bottom: 20px; }
+  .user-content .map {
+    width: 600px;
+    height: 400px;
+    display: inline-block;
+    vertical-align: top; }
+    .user-content .map .china {
+      height: 400px;
+      width: 100%;
+      margin: 0 auto; }
+  .user-content .area {
+    width: 41%;
+    display: inline-block; }
+    .user-content .area .area-intro {
+      width: 28%;
+      display: inline-block; }
+    .user-content .area .num-intro {
+      width: 72%;
+      display: inline-block; }
+    .user-content .area .top-intro {
+      float: left;
+      font-size: 14px;
+      padding: 8px 10px;
+      height: 37px;
+      font-weight: bold;
+      color: #555;
+      background: #ebebeb; }
+    .user-content .area ul li {
+      border-bottom: solid 1px #eee;
+      display: block;
+      overflow: hidden; }
+      .user-content .area ul li .pro-name, .user-content .area ul li .pro-user {
+        font-size: 12px;
+        padding: 8px 10px;
+        line-height: 1.5em; }
+    .user-content .area .area-bottom {
+      height: 400px;
+      overflow-y: scroll;
+      margin-top: 37px; }
+
+.wangEditor-container {
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  z-index: 1;
+  width: 700px !important;
+  height: 400px;
+  display: inline-block;
+  vertical-align: top; }
+
+/*# sourceMappingURL=main.css.map */

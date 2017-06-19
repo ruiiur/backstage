@@ -1,0 +1,34 @@
+<div class="account">
+    <p><i class="show-hide1" ng-if="show" ng-click="isShow(show)"></i></p>
+    <h1>充值记录<i class="question-mark"></i></h1>
+    <div>
+        <div class="control-group">
+            <input  type="text" placeholder="会员ID">
+            <input name="start" class="input-small calendar" type="text" placeholder="充值日期">
+            <label>至</label>
+            <input name="end"  class="input-small calendar" type="text" placeholder="充值日期">
+        </div>
+        <button class="button button-primary"><i class="icon-white icon-search"></i> 查询</button>
+    </div>
+    <div class="panel panel-default panel-esp">
+        <div class="panel-heading">
+            <table class="table">
+                <tr>
+                    <td>充值时间</td>
+                    <td>充值金额（元）</td>
+                    <td>会员ID</td>
+                    <td>会员昵称/会员手机</td>
+                    <td>账充值方式</td>
+                    <td>备注</td>
+                </tr>
+            </table>
+        </div>
+        <table class="table infor">
+            <tr>
+                <td>
+                    暂无信息
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

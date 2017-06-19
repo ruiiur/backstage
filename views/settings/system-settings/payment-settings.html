@@ -1,0 +1,96 @@
+<div class="payment">
+    <p><i class="show-hide1" ng-if="show" ng-click="isShow(show)"></i></p>
+    <h1 class="set-title">支付设置<i class="question-mark"></i></h1>
+    <div class="alert alert-info alert-dismissable">
+        <button type="button" class="close" data-dismiss="alert"
+                aria-hidden="true">
+            &times;
+        </button>
+        <div class="fun-switch">
+            <strong>提示</strong>
+            <span>
+                以下设置项，编辑完成后会自动保存。
+            </span>
+        </div>
+    </div>
+    <div class="alert alert-default switch-choose">
+        <div class="fun-switch">
+            <h1><strong>支付宝批量转账</strong></h1>
+            <p>
+                开启功能后，会员，分销商支付宝提现时，审核通过后，可以批量发放实现自动转账，开启前，请先
+                <a  href="" type="button" class="btn btn-warning">去支付宝签约</a>
+            </p>
+            <span class="warn">手工转账者，请勿开通此功能。</span>
+        </div>
+        <section class="model-2">
+            <div class="checkbox">
+                <input  type="checkbox"/>
+                <label></label>
+            </div>
+        </section>
+    </div>
+    <div class="alert alert-default switch-choose">
+        <div class="fun-switch">
+            <h1><strong>微信支付批量转账</strong></h1>
+            <p>
+                开启功能后，会员，分销商微支付提现时，审核通过后，可以批量发放实现自动转账，开启前，请先开通企业付款,参考
+                <a  href="" type="button" class="btn btn-warning">操作指引</a>
+            </p>
+            <span class="warn">手工转账者，请勿开通此功能。</span>
+        </div>
+        <section class="model-2">
+            <div class="checkbox">
+                <input  type="checkbox"/>
+                <label></label>
+            </div>
+        </section>
+    </div>
+    <div class="alert alert-default switch-choose">
+        <div class="fun-switch">
+            <h1><strong>会员支付密码</strong></h1>
+            <p>
+                关闭该功能后，会员不能使用支付密码
+            </p>
+        </div>
+        <section class="model-2">
+            <div class="checkbox">
+                <input  type="checkbox"/>
+                <label></label>
+            </div>
+        </section>
+    </div>
+    <div class="payment-form">
+        <form class="form-content">
+            <ul>
+                <li >
+                    <label>
+                        姓名校验类型：
+                    </label>
+                    <input type="radio"   value="option1" checked><span class="radio-one input-name">必须真实姓名一致</span>
+                    <input type="radio"  value="option2"><span class="input-name">已实名认证的用户，必须真实姓名一致</span>
+                    <input type="radio"  value="option2"><span class="input-name">不检验真实姓名</span>
+                </li>
+                <li class="obtain">
+                    <p>用于微信支付批量转账时，检验是否需要验证用户真实姓名</p>
+                </li>
+                <li>
+                    <label>上传apiclient_key证书：</label>
+                    <button>选择文件</button>
+                    <span>未选择任何文件</span>
+                </li>
+                <li class="obtain">
+                    <p>登录商户平台－安全设置－API安全下载证书</p>
+                </li>
+                <li>
+                    <label>上传apiclient_cert证书：</label>
+                    <button>选择文件</button>
+                    <span>未选择任何文件</span>
+                </li>
+                <li class="obtain">
+                    <p>登录商户平台－安全设置－API安全下载证书</p>
+                </li>
+            </ul>
+            <button class="upload button button-primary">上传</button>
+        </form>
+    </div>
+</div>

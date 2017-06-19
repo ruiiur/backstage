@@ -1,0 +1,50 @@
+<div class="main-content">
+    <div class="content-left" ng-if="hide">
+        <p><i class="show-hide" ng-click="isHide(hide)"></i></p>
+        <dl>
+            <dt>
+                <i class="fa fa-shopping-bag"></i>
+                <span>交易数据</span>
+            </dt>
+            <dd ui-sref-active="active">
+                <a ui-sref="statistics.order">订单统计</a>
+            </dd>
+        </dl>
+        <dl>
+            <dt>
+                <i class="fa fa-shopping-bag"></i>
+                <span>会员数据</span>
+            </dt>
+            <dd ui-sref-active="active">
+                <a ui-sref="statistics.user-chart">会员分析</a>
+            </dd>
+        </dl>
+        <dl>
+            <dt>
+                <i class="fa fa-shopping-bag"></i>
+                <span>排行榜</span>
+            </dt>
+            <dd ui-sref-active="active">
+                <a ui-sref="statistics.commission">佣金排名</a>
+            </dd>
+            <dd ui-sref-active="active">
+                <a ui-sref="statistics.integral-r">积分排名</a>
+            </dd>
+            <dd ui-sref-active="active">
+                <a ui-sref="statistics.submem">下级会员排名</a>
+            </dd>
+        </dl>
+        <dl>
+            <dt>
+                <i class="fa fa-shopping-bag"></i>
+                <span>营销数据</span>
+            </dt>
+            <dd ui-sref-active="active">
+                <a ui-sref="statistics.integral-s">积分统计</a>
+            </dd>
+            <dd ui-sref-active="active">
+                <a ui-sref="statistics.coupon">优惠券统计</a>
+            </dd>
+        </dl>
+    </div><div ui-view="statistics-main" class="content-right"></div>
+</div>

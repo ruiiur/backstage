@@ -1,0 +1,133 @@
+<div class="order">
+    <p><i class="show-hide1" ng-if="show" ng-click="isShow(show)"></i></p>
+    <h1 class="title-line">订单统计</h1>
+    <div class="panel panel-default panel-esp">
+        <h2 class="panel-heading sub-title">实时统计</h2>
+        <table class="table">
+            <tr>
+                <td>
+                    <h1>总计订单（笔）</h1>
+                    <p>0</p>
+                </td>
+                <td>
+                    <h1>总消费金额（元）</h1>
+                    <p>0</p>
+                </td>
+                <td>
+                    <h1>本月订单（笔）</h1>
+                    <p>0</p>
+                </td>
+                <td>
+                    <h1>本月消费金额（元）</h1>
+                    <p>0</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="panel panel-default panel-esp">
+        <h2 class="panel-heading sub-title">往期统计</h2>
+        <table class="table">
+        <tr>
+            <td>
+                <h1>上月统计（笔）</h1>
+                <p>0</p>
+                <div>环比增幅<span>0%<i></i></span></div>
+            </td>
+            <td>
+                <h1>上月订单金额（元）</h1>
+                <p>0</p>
+                <div>环比增幅<span>0%<i></i></span></div>
+            </td>
+            <td>
+                <h1>上月成交订单（笔）</h1>
+                <p>0</p>
+                <div>环比增幅<span>0%<i></i></span></div>
+            </td>
+            <td>
+                <h1>上月成交金额（元）</h1>
+                <p>0</p>
+                <div>环比增幅<span>0%<i></i></span></div>
+            </td>
+        </tr>
+        </table>
+    </div>
+    <div class="number-price">
+        <span>订单笔数<i class="question-mark"></i></span>
+        <div class="filter">
+            <div class="control-group">
+                <label class="control-label">筛选日期：</label>
+                <input name="start" class="input-small calendar" type="text">
+                <label>至</label>
+                <input name="end"  class="input-small calendar" type="text">
+            </div>
+            <button class="button button-primary"><i class="icon-white icon-search"></i> 查询</button>
+        </div>
+        <div class="choose">
+            <ul class="date">
+                <li class="active">日</li>
+                <li>周</li>
+                <li>月</li>
+                <li>季</li>
+                <li>年</li>
+            </ul>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <h2 class="panel-heading sub-title">订单笔数趋势图</h2>
+        <div class="cd-contain">
+            <div class="order-introduction">
+                <div class="order-left order-color-esp">
+                    <p><b>近30天</b>订单数</p>
+                    <strong>0</strong>
+                </div>
+                <div class="order-right order-color">
+                    <p><b>近30天</b>付款订单数</p>
+                    <strong>0</strong>
+                </div>
+            </div>
+            <div>
+                <highchart config="orderNumChartConfig"  ></highchart>
+            </div>
+        </div>
+    </div>
+
+    <div class="number-price">
+        <span>订单金额<i class="question-mark"></i></span>
+        <div class="filter">
+            <div class="control-group">
+                <label class="control-label">筛选日期：</label>
+                <input name="start" class="input-small calendar" type="text">
+                <label>至</label>
+                <input name="end"  class="input-small calendar" type="text">
+            </div>
+            <button class="button button-primary"><i class="icon-white icon-search"></i> 查询</button>
+        </div>
+        <div class="choose">
+            <ul class="date">
+                <li class="active">日</li>
+                <li>周</li>
+                <li>月</li>
+                <li>季</li>
+                <li>年</li>
+            </ul>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <h2 class="panel-heading sub-title">订单金额趋势图</h2>
+        <div class="cd-contain">
+            <div class="order-introduction">
+                <div class="order-left order-color">
+                    <p><b>近30天</b>订单金额</p>
+                    <strong>0</strong>
+                </div>
+                <div class="order-right order-color">
+                    <p><b>近30天</b>付款订单金额</p>
+                    <strong>0</strong>
+                </div>
+            </div>
+            <div>
+                <highchart config="orderPriceChartConfig"></highchart>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,34 @@
+<div class="order user-chart user">
+    <p><i class="show-hide1" ng-if="show" ng-click="isShow(show)"></i></p>
+    <h1 class="title-line">会员属性<i class="question-mark"></i></h1>
+    <ul class="user-list">
+        <li ui-sref="statistics.user-chart">会员增长</li>
+        <li ui-sref="statistics.user-business">会员业务</li>
+        <li class="active" ui-sref="statistics.user-attr">会员属性</li>
+    </ul>
+    <div class="user-content">
+        <div class="map">
+            <div class="china" id="chinaMap"></div>
+        </div>
+        <div class="area">
+            <div class="area-top">
+                <span class="area-intro top-intro">省份</span><span class="num-intro top-intro">用户数</span>
+            </div>
+            <div class="area-bottom">
+                <ul>
+                    <li ng-repeat="item in items">
+                        <span class="area-intro pro-name">{{item.area}}</span><span class="num-intro pro-user">{{item.num}}</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <h2 class="panel-heading sub-title">性别分布比例</h2>
+        <div class="cd-contain">
+            <div>
+                <highchart config="genderDistributionChartConfig"></highchart>
+            </div>
+        </div>
+    </div>
+</div>

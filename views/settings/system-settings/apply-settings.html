@@ -1,0 +1,164 @@
+<div class="apply">
+    <p><i class="show-hide1" ng-if="show" ng-click="isShow(show)"></i></p>
+    <h1 class="set-title">申请设置<i class="question-mark"></i></h1>
+    <div class="alert alert-default switch-choose">
+        <div class="fun-switch">
+            <h1><strong>申请需满足条件</strong></h1>
+            <p>
+               开启后，需满足<a href="">自动审核</a>条件才能提交申请。
+            </p>
+        </div>
+        <section class="model-2">
+            <div class="checkbox">
+                <input  type="checkbox"/>
+                <label></label>
+            </div>
+        </section>
+    </div>
+    <div class="alert alert-default switch-choose">
+        <div class="fun-switch">
+            <h1><strong>申请页显示条件</strong></h1>
+            <p>
+               开启后，分销申请页面将显示<a href="">自动审核</a>条件。
+            </p>
+        </div>
+        <section class="model-2">
+            <div class="checkbox">
+                <input  type="checkbox"/>
+                <label></label>
+            </div>
+        </section>
+    </div>
+    <div class="alert alert-default switch-choose">
+        <div class="fun-switch">
+            <h1><strong>申请类型</strong></h1>
+            <p>
+               开启后，申请分销商需选择是企业或个人
+            </p>
+        </div>
+        <section class="model-2">
+            <div class="checkbox">
+                <input  type="checkbox"/>
+                <label></label>
+            </div>
+        </section>
+    </div>
+    <div class="alert alert-default switch-choose">
+        <div class="fun-switch">
+            <h1><strong>申请协议</strong></h1>
+            <p>
+                开启后，申请分销商需同意申请协议方可申请
+            </p>
+        </div>
+        <section class="model-2">
+            <div class="checkbox">
+                <input  type="checkbox"/>
+                <label></label>
+            </div>
+        </section>
+    </div>
+    <div class="apply-form">
+        <p class="mention-line"></p>
+        <span class="mention-title">满足申请条件显示页面</span>
+        <form class="form-content">
+            <ul>
+                <li >
+                    <label>
+                        手机号码：
+                    </label>
+                    <input type="checkbox" value="" checked><span class="radio-one input-name">显示</span>
+                    <input type="checkbox" value=""><span class="checkbox-two input-name">必填</span>
+                </li>
+                <li >
+                    <label>
+                        地址信息：
+                    </label>
+                    <input type="checkbox" value="" checked><span class="radio-one input-name">显示</span>
+                    <input type="checkbox" value=""><span class="checkbox-two input-name">必填</span>
+                </li>
+                <li >
+                    <label>
+                        微信号：
+                    </label>
+                    <input type="checkbox" value="" checked><span class="radio-one input-name">显示</span>
+                    <input type="checkbox" value=""><span class="checkbox-two input-name">必填</span>
+                </li>
+                <li class="input-text">
+                    <label>
+                        头部标题：
+                    </label>
+                    <input class="head-title" type="text">
+                    <span></span>
+                </li>
+                <li class="obtain"><p>默认显示“分销申请”</p></li>
+                <li class="input-text">
+                    <label>
+                        <span class="point">*</span>
+                        背景图：
+                    </label>
+                   <ul>
+                       <li>
+                           <img src="">
+                       </li>
+                   </ul>
+                    <!--<span>鼠标放上可以查看例图</span>-->
+                </li>
+                <li class="obtain">
+                    <p>建议尺寸：750px*250px</p>
+                </li>
+                <li >
+                    <label>
+                        申请说明：
+                    </label>
+                    <textarea></textarea>
+                </li>
+                <li>
+                    <label>
+                        默认到期天数：
+                    </label>
+                    <input class="short-in" type="text"><span>天</span>
+                </li>
+                <li class="obtain">
+                    <p>会员成为分销商时自动计算到期时间</p>
+                </li>
+                <li>
+                    <label>
+                        申请协议正文：
+                    </label>
+                    <div id="editor" ng-model="editorContent" content-editor="true" >
+                    </div>
+                    <span></span>
+                </li>
+                <li>
+                    <span class="mention-title">未满足申请条件显示页面</span>
+                </li>
+                <li>
+                    <label>
+                        <span class="point">*</span>
+                        背景图：
+                    </label>
+                    <ul>
+                        <li>
+                            <img src="">
+                        </li>
+                    </ul>
+                </li>
+                <li >
+                    <label>
+                        <span class="point">*</span>
+                        字体大小：
+                    </label>
+                    <input class="short-in" type="text"><span>px</span>
+                </li>
+                <li >
+                    <label>
+                        <span class="point">*</span>
+                        字体颜色：
+                    </label>
+                    <input id="colorSelector">
+                </li>
+            </ul>
+            <button class="button button-primary">保存</button>
+        </form>
+    </div>
+</div>

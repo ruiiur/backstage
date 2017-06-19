@@ -1,0 +1,91 @@
+<div class="mention">
+    <p><i class="show-hide1" ng-if="show" ng-click="isShow(show)"></i></p>
+    <h1 class="set-title">提现设置<i class="question-mark"></i></h1>
+    <div class="alert alert-default switch-choose">
+        <div class="fun-switch">
+            <h1><strong>余额和佣金提现设置分开</strong></h1>
+            <p>
+                如果选择“是”，佣金和余额的提现条件要分开设置。
+            </p>
+        </div>
+        <section class="model-2">
+            <div class="checkbox">
+                <input  type="checkbox"/>
+                <label></label>
+            </div>
+        </section>
+    </div>
+    <div class="mention-form">
+        <p class="mention-line"></p>
+        <span class="mention-title">佣金，金额提现设置</span>
+        <form class="form-content">
+            <ul>
+                <li >
+                    <form>
+                        <label>
+                            <span class="point">*</span>
+                            提现方式：
+                        </label>
+                        <input type="radio" name="mention"  value="option1" checked><span class="radio-one input-name">全额提现</span>
+                        <input type="radio" name="mention"  value="option2"><span class="input-name">整额提现</span>
+                    </form>
+                </li>
+                <li class="input-text">
+                    <label>
+                        <span class="point">*</span>
+                        最低提现金额：
+                    </label>
+                    <input type="text">
+                    <span>元</span>
+                </li>
+                <li class="obtain"><p>提现金额将不小于此值才能提现</p></li>
+                <li class="input-text">
+                    <label>
+                        <span class="point">*</span>
+                        提现百分比：
+                    </label>
+                    <input type="text">
+                    <span>%</span>
+                </li>
+                <li class="obtain">
+                    <p>可提现金额的百分比，为0表示不做限制</p>
+                </li>
+                <li class="input-text">
+                    <label>
+                        提现手续费比例：
+                    </label>
+                    <input type="text">
+                    <span>%</span>
+                </li>
+                <li class="obtain">
+                    <p>为0表示不收手续费</p>
+                </li>
+                <li >
+                    <label>
+                        <span class="point">*</span>
+                        提现提示信息：
+                    </label>
+                    <textarea></textarea>
+                </li>
+                <li >
+                    <label>
+                        <span class="point">*</span>
+                        提现支持账户：
+                    </label>
+                    <input type="checkbox" value="" checked><span class="radio-one input-name">支付宝</span>
+                    <input type="checkbox" value=""><span class="checkbox-two input-name">微信支付</span>
+                    <input type="checkbox" value=""><span class="input-name">京东支付</span>
+                </li>
+                <li >
+                    <label>
+                        <span class="point">*</span>
+                        提现申请时间：
+                    </label>
+                    <input type="radio"   value="option1" checked><span class="radio-one input-name">任意时间</span>
+                    <input type="radio"  value="option2"><span class="input-name">特定时间</span>
+                </li>
+            </ul>
+            <button class="button button-primary">保存</button>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,40 @@
+<div class="withdrawals">
+    <p><i class="show-hide1" ng-if="show" ng-click="isShow(show)"></i></p>
+    <h1>提现申请列表<i class="question-mark"></i></h1>
+    <div>
+        <div class="control-group">
+            <input  type="text" placeholder="昵称/手机号/会员ID">
+            <input  type="text" placeholder="账号">
+            <input class="datainp wicon" id="inpstart"  type="text" placeholder="申请日期">
+            <label>至</label>
+            <input name="end"  class="input-small icondate" type="text" placeholder="申请日期">
+        </div>
+        <button class="button button-primary"><i class="icon-white icon-search"></i> 查询</button>
+    </div>
+    <div class="panel panel-default panel-esp">
+        <div class="panel-heading">
+            <table class="table">
+                <tr>
+                    <td>
+                       <i class="check"></i>
+                    </td>
+                    <td>昵称/手机号/会员ID</td>
+                    <td>申请时间</td>
+                    <td>申请金额（元）</td>
+                    <td>收款帐号/开户行/OpenID</td>
+                    <td>收款人</td>
+                    <td>账号类型</td>
+                    <td>备注</td>
+                    <td>支付登记</td>
+                </tr>
+            </table>
+        </div>
+        <table class="table infor">
+            <tr>
+                <td>
+                    暂无信息
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

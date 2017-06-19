@@ -1,0 +1,49 @@
+<div class="main-content">
+    <div class="content-center">
+        <div class="content-left" ng-if="hide">
+            <p><i class="show-hide" ng-click="isHide(hide)"></i></p>
+            <dl>
+                <dt>
+                    <i class="fa fa-shopping-bag"></i>
+                    <span>审核管理</span>
+                </dt>
+                <dd  ui-sref="finance.withdrawals" ui-sref-active="active" >
+                    <a>提现申请管理</a>
+                </dd>
+                <!--<dd ui-sref="finance.commission"  ui-sref-active="active">-->
+                    <!--<a>佣金转余额审核列表</a>-->
+                <!--</dd>-->
+            </dl>
+            <dl>
+                <dt>
+                    <i class="fa fa-shopping-bag"></i>
+                    <span>财务记录</span>
+                </dt>
+                <dd ui-sref-active="active">
+                    <a ui-sref="finance.withdraw">提现记录</a>
+                </dd>
+                <dd ui-sref-active="active">
+                    <a ui-sref="finance.turn">驳回记录</a>
+                </dd>
+                <!--<dd ui-sref-active="active">-->
+                    <!--<a ui-sref="finance.red">红包记录</a>-->
+                <!--</dd>-->
+                <dd ui-sref-active="active">
+                    <a ui-sref="finance.account">账号充值记录</a>
+                </dd>
+                <dd ui-sref-active="active">
+                    <a ui-sref="finance.capital">资金监控日志</a>
+                </dd>
+            </dl>
+            <!--<dl>-->
+                <!--<dt>-->
+                    <!--<i class="fa fa-shopping-bag"></i>-->
+                    <!--<span>佣金记录</span>-->
+                <!--</dt>-->
+                <!--<dd ui-sref-active="active">-->
+                    <!--<a ui-sref="finance.distributor">分销商佣金</a>-->
+                <!--</dd>-->
+            <!--</dl>-->
+        </div><div ui-view="finance-main" class="content-right"></div>
+    </div>
+</div>

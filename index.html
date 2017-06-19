@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <meta name="format-detection" content="telephone=no">
+    <title>新直营</title>
+    <!--<link rel="stylesheet" href="css/bootstrap/dist/css/bootstrap.min.css"/>-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/css/default.css">
+    <link rel="stylesheet" href="css/css/normalize.css">
+    <link rel="stylesheet" href="css/wangEditor.css">
+    <link rel="stylesheet" href="css/css/styles.css">
+    <!--<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="http://g.alicdn.com/bui/bui/1.1.21/css/bs3/dpl.css" rel="stylesheet">
+    <link href="http://g.alicdn.com/bui/bui/1.1.21/css/bs3/bui.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/colorpicker.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/main.css"/>
+    <!--<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/angular.js"></script>
+    <script src="js/highcharts.src.js"></script>
+    <script src="js/highcharts-ng.min.js"></script>
+    <!--<script src="http://code.highcharts.com/highcharts.src.js"></script>-->
+    <!--<script src="https://rawgithub.com/pablojim/highcharts-ng/master/src/highcharts-ng.js"></script>-->
+    <script type="text/javascript" src="js/jquery.min.js" ></script>
+    <script type="text/javascript" src="js/echarts.min.js" ></script>
+    <script type="text/javascript" src="js/china.js"></script>
+    <!--<script type="text/javascript" src="js/myChina.js"></script>-->
+    <script type="application/json" src="js/china.json" ></script>
+    <script type="text/javascript" src="js/bootstrap.min.js" ></script>
+    <script type="text/javascript" src="js/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="js/wangEditor.js"></script>
+    <script type="text/javascript" src="router.js"></script>
+    <script type="text/javascript" src="jedate/jedate.js"></script>
+    <script type="text/javascript" src="jedate/jquery.jedate.js"></script>
+    <script type="text/javascript" src="js/colorpicker.js"></script>
+    <script src="controller/integral-statistics.js"></script>
+    <script src="controller/coupon-statistics.js"></script>
+    <script src="controller/order.js"></script>
+    <script src="controller/finance.js"></script>
+    <script src="controller/main.js"></script>
+    <script src="controller/apply-settings.js"></script>
+    <script src="controller/user-attr.js"></script>
+    <script src="controller/user-chart.js"></script>
+    <script src="controller/user-business.js"></script>
+    <script src="directive.js"></script>
+</head>
+<body ng-controller="mainCtrl">
+<div ng-include="'template/header.html'"></div>
+<div ui-view="main" class="main">
+</div>
+<div class="footer">
+    © 2017  , Inc. All rights reserved.
+</div>
+</body>
+</html>

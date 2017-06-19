@@ -1,0 +1,117 @@
+<div class="wechat">
+    <p><i class="show-hide1" ng-if="show" ng-click="isShow(show)"></i></p>
+    <h1 class="set-title">微信支付<i class="question-mark"></i></h1>
+    <div class="alert alert-info alert-dismissable">
+        <button type="button" class="close" data-dismiss="alert"
+                aria-hidden="true">
+            &times;
+        </button>
+        <div class="fun-switch">
+            <h1><strong>提示</strong></h1>
+            <p>
+                使用该功能需要提供微信支付功能。
+            </p>
+        </div>
+        <a  href="" type="button" class="btn btn-warning">功能介绍</a>
+        <a  href="" type="button" class="btn btn-success">开通指引</a>
+    </div>
+    <div class="alert alert-default switch-choose">
+        <div class="fun-switch">
+            <h1><strong>功能开关</strong></h1>
+            <p>
+                开启后，结算时可以使用微信支付支付
+            </p>
+        </div>
+        <section class="model-2">
+            <div class="checkbox">
+                <input  type="checkbox"/>
+                <label></label>
+            </div>
+        </section>
+    </div>
+    <div class="alert alert-default switch-choose">
+        <div class="fun-switch">
+            <h1><strong>设为默认</strong></h1>
+            <p>
+                是否设置微信为默认支付方式
+            </p>
+        </div>
+        <section class="model-2">
+            <div class="checkbox">
+                <input  type="checkbox"/>
+                <label></label>
+            </div>
+        </section>
+    </div>
+    <div class="alert alert-default switch-choose">
+        <div class="fun-switch">
+            <h1><strong>是否为财付通</strong></h1>
+            <p>
+                账号是否为财付通
+            </p>
+        </div>
+        <section class="model-2">
+            <div class="checkbox">
+                <input  type="checkbox"/>
+                <label></label>
+            </div>
+        </section>
+    </div>
+    <div class="alipay-form">
+        <form>
+            <ul>
+                <li class="obtain">
+                    <label>
+                        <span>*</span>
+                        APPID：
+                    </label>
+                    <input type="text">
+                    <span></span>
+                </li>
+                <li class="obtain"><p>微信公众号身份的唯一标识</p></li>
+                <li class="obtain">
+                    <label>
+                        <span>*</span>
+                        APPSECRET：
+                    </label>
+                    <input type="text">
+                    <span></span>
+                </li>
+                <li class="obtain"><p>审核后在公众平台开启开发模式后可查看</p></li>
+                <li class="obtain">
+                    <label>
+                        <span>*</span>
+                        MCHID：
+                    </label>
+                    <input type="text">
+                    <span></span>
+                </li>
+                <li class="obtain">
+                    <p>微信支付商户号，审核通过后，在微信发送的邮件中查看。</p>
+                </li>
+                <li class="obtain">
+                    <label>
+                        <span>*</span>
+                        KEY：
+                    </label>
+                    <input type="text">
+                    <span></span>
+                </li>
+                <li class="obtain">
+                    <p>商户支付密钥Key。请登录<a href="https://pay.weixin.qq.com">微信支付商户平台</a>，在【账户设置-安全设置-API安全】中设置。</p>
+                </li>
+                <li class="obtain">
+                    <label>
+                        PAYSIGNKEY：
+                    </label>
+                    <input type="text">
+                    <span></span>
+                </li>
+                <li class="obtain">
+                    <p>财付通商户支付专用签名串PaySignKey。审核通过后，在微信发送的邮件中查看（财付通用户必填）</p>
+                </li>
+            </ul>
+            <button class="button button-primary">保存</button>
+        </form>
+    </div>
+</div>
